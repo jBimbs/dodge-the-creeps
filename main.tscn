@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://bdopkhdk04mcq"]
+[gd_scene load_steps=10 format=4 uid="uid://bdopkhdk04mcq"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_vct1v"]
 [ext_resource type="PackedScene" uid="uid://p3ywq48mflbr" path="res://mob.tscn" id="2_rhoqq"]
 [ext_resource type="PackedScene" uid="uid://cbviwlxfs0drw" path="res://player.tscn" id="3_ahmij"]
+[ext_resource type="Texture2D" uid="uid://d2xkud6ce62md" path="res://art/bg purple.jpg" id="3_dbu0x"]
 [ext_resource type="PackedScene" uid="uid://cl5xoqtx10ncn" path="res://hud.tscn" id="4_4bqs4"]
 
 [sub_resource type="Curve2D" id="Curve2D_7oai7"]
@@ -29,7 +30,16 @@ stereo = true
 script = ExtResource("1_vct1v")
 mob_scene = ExtResource("2_rhoqq")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -48.0
+offset_right = 1201.0
+offset_bottom = 1872.0
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_dbu0x")
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 480.0
 offset_bottom = 720.0
 color = Color(0.960341, 0.846771, 0.873843, 1)
